@@ -1,0 +1,202 @@
+/* Estilos globales */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #c4c0c0;
+}
+
+/* Contenedor principal */
+.contenedor {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 30px;
+}
+
+/* Estilos del encabezado */
+.encabezado {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #e2e2e2;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 25px;
+    width: 1215px;
+}
+
+.nombre_compañia {
+    font-size: 24px;
+}
+
+/* Estilo para el menú */
+.menu {
+    margin: 20px auto;
+    background-color: rgba(217, 217, 217, 0.8);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(227, 219, 219, 0.3);
+}
+
+.menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu ul li {
+    position: relative;
+    display: inline-block; /* Asegura que los elementos principales del menú estén alineados horizontalmente */
+    margin-right: 10px;
+}
+
+.menu a {
+    display: block;
+    padding: 8px 16px;
+    color: #333;
+    text-decoration: none;
+    background-color: transparent;
+}
+
+.menu ul li a:hover {
+    background-color: #a3a0a0;
+    color: #ebe9e9;
+}
+
+/* Submenú (menú desplegable) */
+.menu ul li ul.opciones_1 {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #aca5a5;
+    border: 1px solid #cecaca;
+    border-radius: 5px;
+    padding: 5px 0;
+    min-width: 200px; /* Asegura que el submenú tenga una anchura mínima */
+    z-index: 1000; /* Asegura que el submenú se muestre sobre otros elementos */
+}
+
+.menu ul li ul.opciones_1 li {
+    display: block;
+    margin: 0;
+}
+
+.menu ul li ul.opciones_1 a {
+    padding: 8px 16px;
+    background-color: #aca5a5;
+    color: #333;
+}
+
+.menu ul li ul.opciones_1 a:hover {
+    background-color: #a3a0a0;
+}
+
+/* Mostrar el submenú al hacer hover */
+.menu ul li:hover ul.opciones_1 {
+    display: block;
+}
+
+.logo img {
+    width: 150px;
+    height: 150px;
+    border: 5px solid #cdd7d1;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    transition: transform 0.5s ease-in-out, box-shadow 0.5s ease-in-out;
+}
+
+.logo:hover {
+    transform: scale(1.1);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.7);
+}
+
+/* Estilos del contenido */
+.contenido {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    background-color: #e2e2e2;
+    padding: 20px;
+    width: 100%;
+    border-radius: 5px;
+}
+
+.barra_lateral {
+    width: 100%;
+    background-color: #e2e2e2;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.panel_control {
+    margin-bottom: 20px;
+}
+
+.controls button {
+    display: block;
+    margin-bottom: 10px;
+    width: 150px;
+    padding: 5px;
+}
+
+/* Estilos para el botón único */
+.boton_unico {
+    width: 200px;
+    height: 50px;
+    background-color: #adb5ae; /* Color diferente para el botón único */
+    border: 1px solid rgb(144, 141, 141);
+    border-radius: 5px;
+    cursor: pointer;
+    border: 5px solid #dce4df;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    transition: transform 0.5s ease-in-out, box-shadow 0.5s ease-in-out;
+    margin-left: 500px; /* Espacio entre el botón único y los demás botones */
+}
+
+/* Estilos para la sección de contenido principal */
+.main-content {
+    flex: 1;
+    margin-left: 20px;
+    background-color: #d3cfcf;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+/* Estilos globales para todos los botones */
+button {
+    border: 1px solid;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Estilos para los pares de botones */
+.button-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.button-pair {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.button-pair button {
+    width: 200px;
+    height: 40px;
+    border: 1px solid;
+    border-radius: 5px;
+    margin-left: 25px; /* Espacio horizontal entre botones */
+}
+
+/* Estilos específicos para el botón "button-pair" */
+.button-pair button:first-child {
+    background-color: #d3cfcf; /* Color para el botón "button-pair" */
+    border-color: #d3cfcf; /* Color del borde para el primer botón de "button-pair" */
+}
+
+.boton_nuevo {
+    background-color: #f8fcfa ;
+    border-color: #d3cfcf ;
+}
+
